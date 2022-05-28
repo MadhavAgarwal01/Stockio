@@ -10,6 +10,8 @@ A stock analysis dashboard for technical and sentiment analysis for your stock.
 
 ![App Screenshot](https://github.com/MadhavAgarwal01/Stockio/blob/main/Screenshots/Homepage.png)
 
+![App Screenshot](https://github.com/MadhavAgarwal01/Stockio/blob/main/Screenshots/Technicals.png)
+
 - Stock Sentiment Analysis
 
 ![App Screenshot](https://github.com/MadhavAgarwal01/Stockio/blob/main/Screenshots/Sentiment.png)
