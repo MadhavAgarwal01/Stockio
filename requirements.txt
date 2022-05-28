@@ -1,0 +1,12 @@
+beautifulsoup4==4.11.1
+pandas==1.4.2
+plotly==5.6.0
+prophet==1.0.1
+requests==2.27.1
+streamlit==1.9.0
+torch==1.11.0
+transformers==4.18.0
+tweepy==4.9.0
+yfinance==0.1.70
+psycopg2
+numpy
