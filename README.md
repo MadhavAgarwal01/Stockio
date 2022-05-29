@@ -1,7 +1,7 @@
 
 # Stockio
 
-A stock analysis dashboard for technical and sentiment analysis for your stock.
+A stock analysis application for technical and sentiment analysis for your stock.
 
 
 ## Tech Stack
