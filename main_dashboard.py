@@ -181,12 +181,12 @@ if(option == "Predictions"):
 
     st.header("Predictions")
     st.markdown(" ")
-    st.sidebar.markdown("<a href='#top' style='color:#1ac49f; font-family:Tahoma; font-size:14px; text-decoration: none;'>&#8227; Back to top </a>",unsafe_allow_html=True)
     # loading animation
     with st.spinner('loading...'):
         keyword = st.sidebar.text_input("COMPANY NAME","apple")
         symbol = get_ticker(keyword)
         comp_name = get_comp_name(symbol)
+        st.sidebar.markdown("<a href='#top' style='color:#1ac49f; font-family:Tahoma; font-size:14px; text-decoration: none;'>&#8227; Back to top </a>",unsafe_allow_html=True)
 
         data = get_data(symbol)
         ticker = yf.Ticker(symbol)
@@ -316,14 +316,18 @@ if(option == "Stock Sentiment Analysis"):
         st.markdown(f'<p style="font-family:Tahoma; font-size:18px; font-weight:medium">{ticker.info["country"]} | {ticker.info["sector"]}</p>', unsafe_allow_html=True)
 
         comps=stock_sentiment_scores[0]
-        pols=stock_sentiment_scores[1]
+        var=stock_sentiment_scores[1]
+
+        multiplier=1
+        if comps<0.5:
+            multiplier = -1
 
         # metrics
         st.markdown("---")
         col1, col2, col3, col4, col5 = st.columns([4,2,4,2,4])
-        col1.metric("Recommendation Score",ticker.info['recommendationMean'] + comps)
-        col3.metric("Sentiment Score", comps)
-        col5.metric("Variance Score", pols)
+        col1.metric("Recommendation Score",ticker.info['recommendationMean'] + multiplier*comps, multiplier*comps)
+        col3.metric("Sentiment Score", multiplier*comps, multiplier*comps-0.5)
+        col5.metric("Variance Score", var, var-0.5)
         st.markdown("---")
 
         # printing data
