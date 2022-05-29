@@ -4,6 +4,20 @@
 A stock analysis dashboard for technical and sentiment analysis for your stock.
 
 
+## Tech Stack
+
+**Language :**  Python
+
+**Libraries :** Streamlit, Beautiful Soup, Ploty, Tweepy, Yfinance, Torch, Requests, Transformers, Prophet, Pandas
+
+**ML Models :** Facebook's Prophet, Google's BERT
+
+
+## Authors
+
+- [@MadhavAgarwal01](https://github.com/MadhavAgarwal01)
+
+
 ## Features and Screenshots
 
 - Stock Technical Analysis
@@ -48,18 +62,4 @@ Start the app using the following command.
 ```bash
   streamlit run main_dashboard.py
 ``` -->
-
-
-## Tech Stack
-
-**Language :**  Python
-
-**Libraries :** Streamlit, Beautiful Soup, Ploty, Tweepy, Yfinance, Torch, Requests, Transformers, Prophet, Pandas
-
-**ML Models :** Facebook's Prophet, Google's BERT
-
-
-## Authors
-
-- [@MadhavAgarwal01](https://github.com/MadhavAgarwal01)
 
