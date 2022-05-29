@@ -325,8 +325,8 @@ if(option == "Stock Sentiment Analysis"):
         # metrics
         st.markdown("---")
         col1, col2, col3, col4, col5 = st.columns([4,2,4,2,4])
-        col1.metric("Recommendation Score",ticker.info['recommendationMean'] + multiplier*comps, multiplier*comps)
-        col3.metric("Sentiment Score", multiplier*comps, multiplier*comps-0.5)
+        col1.metric("Recommendation Score",round(ticker.info['recommendationMean'] + multiplier*comps,2), multiplier*comps)
+        col3.metric("Sentiment Score", multiplier*comps, round(multiplier*comps-0.5,2))
         col5.metric("Variance Score", var, var-0.5)
         st.markdown("---")
 
