@@ -30,6 +30,7 @@ A stock analysis dashboard for technical and sentiment analysis for your stock.
 
 ![App Screenshot](https://github.com/MadhavAgarwal01/Stockio/blob/main/Screenshots/LIve_tweets.png)
 
+<!-- 
 ## Installation and Run
 
 Run the below command to install all the required dependencies.
@@ -46,7 +47,7 @@ Start the app using the following command.
 
 ```bash
   streamlit run main_dashboard.py
-```
+``` -->
 
 
 ## Tech Stack
