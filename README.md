@@ -8,7 +8,7 @@ A stock analysis application for technical and sentiment analysis for your stock
 
 **Language :**  Python
 
-**Libraries :** Streamlit, Beautiful Soup, Ploty, Tweepy, Yfinance, Torch, Requests, Transformers, Prophet, Pandas
+**Libraries :** Streamlit, Beautiful Soup, Ploty, Tweepy, Yfinance, Torch, Requests, Transformers, Prophet
 
 **ML Models :** Facebook's Prophet, Google's BERT
 
