@@ -1,5 +1,5 @@
 
-# Stockio
+# Stockio - A Stock Analysis Application
 
 A stock analysis application for technical and sentiment analysis for your stock.
 
